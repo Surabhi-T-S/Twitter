@@ -1,0 +1,186 @@
+*{
+    box-sizing:border-box;
+}
+    
+body{
+        width:99vw !important;
+        margin-left:0.5vw !important;
+        margin-right:0.5vw !important;
+    }
+#sidebar{
+        display:none;
+    }
+#trending{
+        display:none;
+    }
+#feed{
+        width:85vw;
+        /*margin:40px 1vw 1px 1vw;*/
+        padding:0px;
+    }
+a{
+        text-decoration:none;
+        color:inherit;
+    }
+.feed-item{
+        width:inherit;
+    }
+.feed-item .fa-star-o{
+        line-height: 50px;
+    }
+.feed-item:first-child{
+    
+        position:fixed !important;
+        top:0px;
+        border:1px solid #f1f1f1;
+        width:85vw;
+        margin-left:15vw;
+        z-index:1;
+        font-weight:bold;
+        font-size:120%;
+        height:50px;
+        padding-bottom:2%;
+        line-height:50px;
+        background-color: rgba(255,255,255,1);
+    }
+.feed-item:nth-child(3){
+       display:block;
+       margin-top:50px !important;
+    }
+.feed-item{
+        display:block;
+    }
+.feed-item:not(.feed-item:first-child){
+       
+        padding:1%;
+        min-height:fit-content;
+    }
+.feed-item:not(.feed-item:first-child,.feed-item:nth-child(2))::after{
+        content:"";
+        clear:both;
+    }
+.feed-item:nth-child(2){
+        display:none;
+    }
+    
+.feed-item .feed-item-dp{
+            width:10vw;
+            height:10vw;
+            border:1px solid transparent;
+            border-radius:50%;
+            float:left;
+        }
+.feed-item .feed-item-id{
+            margin-left:2vw;;
+            font-size:90%;
+        
+        }
+.feed-item .fa-check-circle{
+            color:var(--main);
+        }
+.feed-item .feed-item-mention{
+            color:#999;
+            font-size:80%;
+            font-family:arial,verdana,sans-serif;
+            margin-left:0px;
+        }
+.feed-item .fa-ellipsis-h{
+           color:#777;
+           position:absolute;
+           right:5px;
+        }
+.feed-item td:first-child .feed-item-content{
+           margin-left:12vw;
+           width:fit-content;
+        }
+.feed-item tr:nth-child(2){
+            text-align:right;
+        }
+.feed-item tr:nth-child(2) img{
+            width:80%;
+            border:1px solid transparent;
+            border-radius:20px;
+            margin-right:10%;
+        }
+        
+.feed-item .feed-item-content{
+            padding-top:5px;
+            font-size:90%;
+            width:90%;
+            margin-right:10%;
+            overflow-wrap: anywhere;
+        }
+.feed-item tr:last-child{
+           display:inline-block;
+           width:auto;
+           padding-left:10vw; 
+           text-align:left;
+           word-spacing:3vw;
+        }
+.feed-item tr:last-child td{
+        
+            color:#888  !important;
+        
+    }
+.feed-item tr:last-child td a{
+        color:inherit;
+    }
+.feed-item tr:last-child td a span{
+        font-size:50%;
+    }
+       
+.feed-item tr:last-child td a .fa{
+        padding:5px;
+        border:1px solid transparent;
+        border-radius:50%;
+    }
+    
+.feed-item tr:last-child td a:not(a:nth-child(3)):hover{
+        color:var(--main);
+    }
+.feed-item tr:last-child td a:nth-child(3):hover{
+        color:crimson;
+    }
+.feed-item tr:last-child td a:nth-child(3):hover .fa{
+        background-color:rgb(236, 191, 200);
+        border:1px solid transparent;
+        border-radius:50%;
+    }
+.feed-item tr:last-child td a:not(a:nth-child(3)):hover .fa{
+        background-color:var(--bg);
+    }
+.feed-item .fa-ellipsis-h{
+        color:#777;
+        position:absolute;
+        right:12vw;
+     
+    }
+    
+#tab-navbar{
+        display:block;
+        float:right;
+        width:15vw;
+        border-right:1px solid #eee;
+}
+.tab-navbar-item{
+     display:block;
+     
+}
+.navbar-item span{
+        font-size:small;
+        background-color:var(--main);
+        border:1px solid transparent;
+        border-radius:50%;
+        color:white;
+        padding:0.2vw 0.3vw;
+        position:relative;
+        top:-2vw;
+        right:2.3vw;
+}
+#add-tweet{
+        position:fixed;
+        bottom:10vh;
+        right:11vw;
+        color:var(--main);
+        background-color: rgba(255,255,255,1);
+}

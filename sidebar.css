@@ -1,0 +1,84 @@
+   
+   body{
+    margin:0px 50px;
+    font-family:arial,verdana,sans-serif;
+}
+.fa-twitter{
+    padding:5px;
+    color:var(--main);
+    border:1px solid transparent;
+    border-radius:50% ;
+   }
+   .fa-twitter:hover{
+    background-color:var(--bg);
+   }
+  
+   a{ 
+       text-decoration:none;
+       color:black;
+       vertical-align:middle;
+   }
+   #sidebar{
+       display:block;
+       position:fixed;
+       left:20px;
+       top:0px;
+       list-style:none;
+       margin-top:0x;
+       width:20vw;
+       padding:5px 10px;
+   }
+   .fa:not(.fa-twitter){
+     padding-right:10px;
+   }
+
+   .sidebar-item{
+       text-align:left;
+       vertical-align:baseline;
+       margin:10px 20px;
+       padding:5px;
+       border:1px solid transparent;
+       border-radius:20px;
+     
+   }
+   .sidebar-item:not(.sidebar-item:first-child):hover,.sidebar-item:not(.sidebar-item:first-child):active{
+     background-color:#eeeeee;
+   }
+
+   #badge{
+       font-size:9px;
+       background-color: var(--main);
+       border:1px solid transparent;
+       border-radius:60%;
+       padding:2px 3px;
+       color:white;
+       position:absolute;
+       right:75%;
+   }
+   #new-tweet{
+       color:#ffffff;
+       background-color:var(--main);
+       border:1px solid transparent;
+       border-radius:20px;
+       text-align:center;
+   }
+   #new-tweet a{
+       color:white;
+   }
+   #new-tweet:hover{
+       background-color:#5AABAF;
+   }
+   #profile .fa-user{
+    color:#bbb;
+    background-color:#ddd;
+    border:1px solid transparent;
+    border-radius:50%;
+    margin-right:10px;
+    padding:1px 5px;
+    }
+   #profile{
+      position:fixed;
+      bottom:0px;
+    }
+    
+  

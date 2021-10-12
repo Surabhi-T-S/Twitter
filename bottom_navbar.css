@@ -1,0 +1,25 @@
+.sidebar-item{
+    float:left;
+}
+.sidebar-item a{
+    display:none;
+}
+.sidebar-item:nth-child(2) .fa{
+    display:block;
+}
+.sidebar-item:nth-child(3) .fa{
+    display:block;
+}
+.sidebar-item:nth-child(4) .fa{
+    display:block;
+}
+
+#sidebar{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    background-color: white;
+    width:100vw;
+    text-align:justify;
+    margin:5px;
+}
